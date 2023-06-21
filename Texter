@@ -1,0 +1,3 @@
+if [ -e $CLASS_ENC_FILE -a -e $CLASS_DS_FILE ]
+
+if [ $( $JAVA_HOME/bin/java -jar SecureTomcatJDBC.jar|grep -i "^USAGE"|wc -l ) -eq 1 ]
